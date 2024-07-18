@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Negocio de Camisetas NCAA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Modelo de Negocio de Camisetas NCAA</h1>
+        <div class="input-group">
+            <label for="demand">Demanda estimada:</label>
+            <div class="input-with-buttons">
+                <button class="decrement" data-target="demand">-</button>
+                <input type="number" id="demand" value="1500">
+                <button class="increment" data-target="demand">+</button>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="order">Cantidad de pedido:</label>
+            <div class="input-with-buttons">
+                <button class="decrement" data-target="order">-</button>
+                <input type="number" id="order" value="1450">
+                <button class="increment" data-target="order">+</button>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="fixedCost">Costo fijo ($):</label>
+            <div class="input-with-buttons">
+                <button class="decrement" data-target="fixedCost">-</button>
+                <input type="number" id="fixedCost" value="750">
+                <button class="increment" data-target="fixedCost">+</button>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="variableCost">Costo variable por camiseta ($):</label>
+            <div class="input-with-buttons">
+                <button class="decrement" data-target="variableCost">-</button>
+                <input type="number" id="variableCost" value="8">
+                <button class="increment" data-target="variableCost">+</button>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="fullPrice">Precio de venta completo ($):</label>
+            <div class="input-with-buttons">
+                <button class="decrement" data-target="fullPrice">-</button>
+                <input type="number" id="fullPrice" value="18">
+                <button class="increment" data-target="fullPrice">+</button>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="discount">Descuento (%):</label>
+            <div class="input-with-buttons">
+                <input type="number" id="discount" value="0" min="0" max="100">
+                <button id="applyDiscount">Aplicar Descuento</button>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="discountPrice">Precio de venta con descuento ($):</label>
+            <div class="input-with-buttons">
+                <button class="decrement" data-target="discountPrice">-</button>
+                <input type="number" id="discountPrice" value="6">
+                <button class="increment" data-target="discountPrice">+</button>
+            </div>
+        </div>
+        <button id="calculate">Calcular</button>
+        <button id="random">Generar valores aleatorios</button>
+        <button id="clear">Limpiar</button>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
